@@ -1,6 +1,6 @@
 #pragma once
 
-// Autor : Pierre Mandambu
+// Autor : Pierre Djenny Mandambu
 // Date : 25.03.2024
 
 #include <iostream>
@@ -17,10 +17,10 @@ using namespace std;
 
 @class BCD dient zur Umrechnung von Dezimalzahlen in BCD-Zahlen.
 
-Dar¸ber hinaus bietet sie f¸r die Anwender die Mˆglichkeit zwei Dezimalzahlen in BCD-Code zu addieren
+Dar√ºber hinaus bietet sie f√ºr die Anwender die M√∂glichkeit zwei Dezimalzahlen in BCD-Code zu addieren
 und die komplette Berechnung zu verfolgen, und damit um zu sehen, wie man zwei Zahlen in BCD-Code addiert.
 
-Zwei Funktionen, n‰mlich vSumme und vAddition, spielen neben anderen Funktionen eine wichtige Rolle.
+Zwei Funktionen, n√§mlich vSumme und vAddition, spielen neben anderen Funktionen eine wichtige Rolle.
 */
 class BCD
 {
@@ -34,7 +34,7 @@ public:
 	//Standard-Destruktor
 	virtual ~BCD();
 
-	// Diese Funktion f¸gt ein String am Anfang eines Vectors hinzu
+	// Diese Funktion f√ºgt ein String am Anfang eines Vectors hinzu
 	void vPushFront(string sEingabe, int iPlace = 1, int iAnzahl = 1);
 
 	// Diese Funktion rechnet eine Dezimalzahl in eine BCD-Zahl um
@@ -47,7 +47,7 @@ public:
 	und dann werden sie in den Vectoren p_vsPartition1, p_vsPartition2 gespeichert */
 	void vPartition();
 
-	/* Die Funktion vSumme addiert zwei Bin‰rzahlen eines Block von den Partitionen
+	/* Die Funktion vSumme addiert zwei Bin√§rzahlen eines Block von den Partitionen
 	oder von der ersten Summation mit dem Korrektur-String, falls j = 2 ist */
 	void vSumme(int iCursor, int j = 1);
 
@@ -61,16 +61,16 @@ public:
 private:
 	int p_iDecimal1;                  // Erste Dezimalzahl (erste Eingabe)
 	int p_iDecimal2;                  // Zweite Dezimalzahl (zweite Eingabe)
-	int p_iUebertrag1;                // Erster ‹bertrag
-	int p_iUebertrag2;                // Zweiter ‹bertrag
+	int p_iUebertrag1;                // Erster √úbertrag
+	int p_iUebertrag2;                // Zweiter √úbertrag
 
 	string p_sDecimal1;               // Erste Dezimalzahl (erste Eingabe), gespeichert als string
 	string p_sDecimal2;               // Zweite Dezimalzahl (zweite Eingabe), gespeichert als string
-	string p_sUebertrag1;             // Speichert alle ‹bertr‰ge der ersten Summation von einem Block
-	string p_sUebertrag2;             // Speichert alle ‹bertr‰ge der zweiten Summation von einem Block
-	string p_sBinaer1;                // Erste Bin‰rzahl
-	string p_sBinaer2;                // Zweite Bin‰rzahl
-	string p_sSumme;                  // Speichert die Summe von zwei Bin‰rzahlen
+	string p_sUebertrag1;             // Speichert alle √úbertr√§ge der ersten Summation von einem Block
+	string p_sUebertrag2;             // Speichert alle √úbertr√§ge der zweiten Summation von einem Block
+	string p_sBinaer1;                // Erste Bin√§rzahl
+	string p_sBinaer2;                // Zweite Bin√§rzahl
+	string p_sSumme;                  // Speichert die Summe von zwei Bin√§rzahlen
 	string p_skorrektur;              // Speichert die Korrektur 0110, wenn die Zahl eine Pseudotetrade ist
 
 	vector<int> p_viResult;           // Speichert das letzte Ergebnis in einer Dezimalzahl
